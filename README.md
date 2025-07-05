@@ -31,8 +31,9 @@ A linguagem é composta por uma sequência de comandos que operam sobre tabelas 
 ## 3. Guia de Execução 
 ### Executando no GitHub Codespaces 
 
-Execute o interpretador a partir do terminal do Codespaces
-Digite o comandoexecutar um dos exemplos:
+Execute o interpretador a partir do terminal do Codespaces.
+
+Digite o comando abaixo para executar um dos exemplos:
 
     ```bash
     #  Exemplo com o dataset de Vendas
@@ -60,3 +61,19 @@ A saída da execução do interpretador será exibida no terminal.
     ```bash
     python datapreplang/main.py examples/teste_vendas.dpl
     ```
+    
+### 4. Datasets Utilizados
+
+Para validar a flexibilidade e as funcionalidades da `DataPrepLang`, foram utilizados dois conjuntos de dados distintos, cada um apresentando desafios de pré-processamento diferentes. Ambos estão localizados na pasta `examples/Database-source/`.
+
+### 1. Telco Customer Churn
+
+* **Origem:** Este é um dataset clássico, originalmente disponibilizado pela IBM e popularizado na plataforma Kaggle.
+* **Link da Fonte:** [Kaggle - Telco Customer Churn](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
+* **Descrição:** Contém dados demográficos e de serviços sobre clientes de uma empresa de telecomunicações, com uma coluna indicando se o cliente cancelou o serviço ("churn").
+
+
+### 2. Contoso Sales Data (Vendas de 2017)
+
+* **Origem:** "Contoso" é o nome de uma empresa fictícia utilizada pela Microsoft em seus exemplos e tutoriais. Este dataset é representativo de dados de vendas transacionais do mundo real.
+* **Descrição:** Apresenta um registro de vendas de uma loja de varejo, detalhando informações de transação, produtos, clientes e devoluções.
