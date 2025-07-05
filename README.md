@@ -5,15 +5,10 @@
 
 ---
 
-## 1. Motivação e Descrição da Linguagem (Critérios 'c' e 'd')
+## 1. Motivação da Linguagem
 
 ### O Problema
 No ciclo de vida de qualquer projeto de Análise de Dados ou Inteligência Artificial, uma das etapas mais demoradas e repetitivas é a de **pré-processamento e limpeza de dados**. Tarefas como carregar diferentes formatos de arquivos, tratar valores ausentes, remover dados irrelevantes e realizar análises exploratórias iniciais geralmente exigem a escrita de scripts verbosos em bibliotecas como Pandas, tornando o fluxo de trabalho lento e suscetível a erros.
-
-### A Solução: DataPrepLang
-**DataPrepLang** é uma Linguagem de Domínio Específico (DSL) declarativa e de alto nível, projetada para simplificar e automatizar esse pipeline de limpeza de dados. Com uma sintaxe intuitiva e próxima da linguagem natural, ela permite que analistas e cientistas de dados definam fluxos de trabalho de pré-processamento de forma rápida, legível e reproduzível, focando no "o quê" em vez do "como".
-
-A linguagem é **interpretada** e utiliza a biblioteca Pandas como seu back-end de execução, traduzindo comandos simples em operações de DataFrames complexas.
 
 ---
 
@@ -36,21 +31,17 @@ A linguagem é composta por uma sequência de comandos que operam sobre tabelas 
 ## 3. Guia de Execução 
 ### Executando no GitHub Codespaces 
 
-Este projeto foi configurado para rodar perfeitamente no GitHub Codespaces com o mínimo de esforço.
-
-1.  Clique no botão verde **"< > Code"** no topo desta página do repositório.
-2.  Vá para a aba **"Codespaces"** e clique em **"Create codespace on main"**.
-3.  Aguarde um instante. O Codespaces irá criar um ambiente virtual e instalará **automaticamente** todas as dependências listadas no `requirements.txt`.
-4.  Quando o ambiente carregar, um terminal aparecerá na parte inferior. Para executar um dos exemplos, simplesmente digite o comando:
+Execute o interpretador a partir do terminal do Codespaces
+Digite o comandoexecutar um dos exemplos:
 
     ```bash
-    # Para executar o exemplo de limpeza de dados de vendas
+    #  Exemplo com o dataset de Vendas
     python datapreplang/main.py examples/teste_vendas.dpl
 
-    # Para executar o exemplo de limpeza de dados de churn
+    # Exemplo com o dataset de Churn
     python datapreplang/main.py examples/teste_chrun.dpl
     ```
-    A saída da execução do interpretador será exibida no terminal.
+A saída da execução do interpretador será exibida no terminal.
 
 ### Executando Localmente
 
