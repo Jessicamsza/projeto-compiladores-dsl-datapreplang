@@ -2,7 +2,7 @@ import sys
 from antlr4 import *
 from grammar.DataPrepLangLexer import DataPrepLangLexer
 from grammar.DataPrepLangParser import DataPrepLangParser
-from interpreter import Interpreter # IMPORTANTE: Importa nossa nova classe
+from interpreter import Interpreter 
 
 def main():
     try:
@@ -24,12 +24,9 @@ def main():
     else:
         print("Análise sintática concluída. Iniciando interpretação...")
         print("-" * 50)
-        
-        # --- EXECUÇÃO DO INTERPRETADOR ---
-        # 1. Cria uma instância do nosso interpretador.
+
         interpreter = Interpreter()
         
-        # 2. Inicia a "caminhada" pela árvore a partir do topo (nó 'program').
         interpreter.visit(tree)
         
         print("-" * 50)
