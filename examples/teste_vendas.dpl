@@ -1,0 +1,12 @@
+CARREGAR DADOS DE "examples/DataBase-source/Contoso-Vendas-2017.csv" PARA vendas USANDO DELIMITADOR ";"
+
+EM vendas:
+    COLUNA "Quantidade Devolvida" PNULL 0
+FIM
+
+ANALISAR vendas:
+    DESCREVER "VendasLiquidas"
+    DESCREVER "Quantidade Vendida"
+FIM
+
+SALVAR vendas EM "examples/DataBase-clean/vendas_contoso_limpas.csv"

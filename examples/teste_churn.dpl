@@ -1,0 +1,12 @@
+CARREGAR DADOS DE "examples/DataBase-source/Telco-Customer-Churn.csv" PARA dados
+
+EM dados:
+    COLUNA "TotalCharges" PNULL 0.0
+FIM
+
+ANALISAR dados:
+    DESCREVER "MonthlyCharges"
+    CONTAGEM_VALORES NA COLUNA "PaymentMethod"
+FIM
+
+SALVAR dados EM "examples/DataBase-clean/dados_chrun_limpo.csv"

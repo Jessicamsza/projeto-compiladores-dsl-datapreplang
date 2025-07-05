@@ -1,0 +1,21 @@
+{
+  "name": "Python 3",
+  // Usa uma imagem oficial do Python como base.
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+
+  // Configurações para o VS Code dentro do Codespace.
+  "customizations": {
+    "vscode": {
+      "settings": {},
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "mike-lischke.vscode-antlr4"
+      ]
+    }
+  },
+
+  // Comando a ser executado DEPOIS que o container for criado.
+  // Isso instala automaticamente as dependências para o professor!
+  "postCreateCommand": "pip install -r requirements.txt"
+}
